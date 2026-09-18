@@ -6,7 +6,7 @@ import { PostCard, type PostRow } from "@/components/PostCard";
 import { Badge } from "@/components/ui/badge";
 import { CATEGORIES } from "@/lib/community";
 
-type FeedSearch = { q?: string; cat?: string };
+type FeedSearch = { q?: string | undefined; cat?: string | undefined };
 
 export const Route = createFileRoute("/_authenticated/inicio")({
   validateSearch: (search: Record<string, unknown>): FeedSearch => ({

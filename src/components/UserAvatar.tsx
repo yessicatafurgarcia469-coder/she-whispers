@@ -25,10 +25,10 @@ export function UserAvatar({
   anonymous,
   className,
 }: {
-  name?: string | null;
-  avatarPath?: string | null;
-  anonymous?: boolean;
-  className?: string;
+  name?: string | null | undefined;
+  avatarPath?: string | null | undefined;
+  anonymous?: boolean | undefined;
+  className?: string | undefined;
 }) {
   const { data: url } = useAvatarUrl(anonymous ? null : avatarPath);
 
