@@ -191,6 +191,7 @@ export type Database = {
           display_name: string | null
           id: string | null
           is_anonymous: boolean | null
+          is_mine: boolean | null
           parent_id: string | null
           post_id: string | null
         }
@@ -235,6 +236,7 @@ export type Database = {
           display_name: string | null
           id: string | null
           is_anonymous: boolean | null
+          is_mine: boolean | null
         }
         Relationships: []
       }
